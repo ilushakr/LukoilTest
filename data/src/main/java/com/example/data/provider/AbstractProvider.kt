@@ -4,7 +4,7 @@ import com.example.domain.appobjects.AppResult
 
 abstract class AbstractProvider {
 
-    suspend fun <T> execute(block: suspend () -> T): AppResult<T> {
+    inline fun <T> execute(block: () -> T): AppResult<T> {
         return try {
             AppResult.Success(block())
         } catch (e: Throwable) {
