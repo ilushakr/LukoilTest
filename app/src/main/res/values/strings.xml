@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LukoilTest</string>
+    <string name="error_message">Oops. Something went wrong</string>
+    <string name="error_button">RETRY!!</string>
+</resources>
